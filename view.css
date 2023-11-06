@@ -1,0 +1,19 @@
+h4
+{
+    text-align: center;
+    color: white;
+}
+.container
+{
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+label
+{
+    color: white;
+}
+.nav-link:hover
+{
+    color:burlywood !important;
+}

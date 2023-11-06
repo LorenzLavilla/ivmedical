@@ -1,0 +1,38 @@
+.welcome 
+{
+    height: 100vh;
+    background: #000;
+    
+}
+.p1
+{
+    position: relative;
+    text-transform: capitalize;
+    top: 40%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 10px;
+    font-family: AvenirLTStd-Black;
+    src: url("fonts/AvenirLTStd-Black.otf") format("opentype");
+}
+.p2
+{
+    position: relative;
+    text-align: center;
+    top: 36%;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 7px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.btn
+{
+    position: relative;
+    top: 39%;
+    left: 45%;
+}
+.nav-link:hover
+{
+    color:burlywood !important;
+}

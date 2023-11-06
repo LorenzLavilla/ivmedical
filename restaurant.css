@@ -1,0 +1,47 @@
+h4
+{
+text-align: center;
+margin-top: 30px;
+color: white;
+}
+.main
+{
+  
+    text-align: center;
+    margin-left: 235px;
+}
+.choice1 
+{
+    margin-top: 30px;
+    margin-left: 75px;
+    width: 20rem;
+    height: 350px;
+    background-image: url(./images/ricemeal.jpg);
+    background-size: cover;
+    border-radius: 5%;
+    float: left;    
+}
+.choice2
+{
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 5%;
+    width: 20rem;
+    height: 350px;
+    background-image: url(./images/drinks.jpg);
+    background-size: cover;
+    float:left;
+}
+p
+{
+    text-align: center;
+    color: white;
+    margin-top: 50%;
+    font-size: larger;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.nav-link:hover
+{
+    color:burlywood !important;
+}
