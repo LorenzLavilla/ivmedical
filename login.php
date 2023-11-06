@@ -20,8 +20,6 @@
                     setcookie('user', $_id,  time() + 3600, '/');
                     $name = $row["FirstName"] ;
                     setcookie('name', $name, time()+3600, '/');
-                    echo $_id;
-                    echo $_name;
                     header("HTTP/1.1 302 Found");
                     header("Location: /home.php?Name=".$name);
                     echo'<script>
