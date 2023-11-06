@@ -1,4 +1,3 @@
-
 <?php
       session_start();  
       include('connectionsql_server.php');
@@ -14,21 +13,22 @@
                     die(print_r(sqlsrv_errors(), true));
                 }
                 $recordCount = sqlsrv_num_rows($result);
-
                 if ($recordCount > 0) 
                 {
+                    echo "hello";
                     $row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC);
                     $_id =  $row["PatientID"];
                     setcookie('user', $_id,  time() + 3600, '/');
                     $name = $row["FirstName"] ;
                     setcookie('name', $name, time()+3600, '/');
-                    header("Location: home.php?Name=".$name);
-                    sqlsrv_close($conn);
+                    header("HTTP/1.1 302 Found");
+                    header("Location: /home.php?Name=".$name);
                     exit();
                 }
                 else if($username == "kitchen@IV.com" & $password=="12345")
                 {
-                    header("Location:restaurant.php");
+                    header("HTTP/1.1 302 Found");
+                    header("Location: /restaurant.php");
                     exit();
                 }
                 else 
