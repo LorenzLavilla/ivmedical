@@ -24,6 +24,10 @@
                     echo $_name;
                     header("HTTP/1.1 302 Found");
                     header("Location: /home.php?Name=".$name);
+                    echo'<script>
+                    window.location.href ="home.php";
+                    alert ("Invalid Username or Password")
+                    </script>';
                     exit();
                 }
                 else if($username == "kitchen@IV.com" & $password=="12345")
