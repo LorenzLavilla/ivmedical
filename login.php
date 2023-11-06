@@ -26,7 +26,6 @@
                     header("Location: /home.php?Name=".$name);
                     echo'<script>
                     window.location.href ="home.php";
-                    alert ("Invalid Username or Password")
                     </script>';
                     exit();
                 }

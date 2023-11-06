@@ -23,7 +23,7 @@
                      <td>$row[Date]</td> 
                      <td>
                       <form method ='post' >
-                      <a class='btn btn-danger' href=view.php?orderid=$row[OrderID]>VIEW ORDER</a>
+                      <a class='btn btn-danger' href=myorderview.php?orderid=$row[OrderID]>VIEW ORDER</a>
                       </form>
                        </td>
                        <td>$row[Status]</td> 
