@@ -15,12 +15,13 @@
                 $recordCount = sqlsrv_num_rows($result);
                 if ($recordCount > 0) 
                 {
-                    echo "hello";
                     $row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC);
                     $_id =  $row["PatientID"];
                     setcookie('user', $_id,  time() + 3600, '/');
                     $name = $row["FirstName"] ;
                     setcookie('name', $name, time()+3600, '/');
+                    echo $_id;
+                    echo $_name;
                     header("HTTP/1.1 302 Found");
                     header("Location: /home.php?Name=".$name);
                     exit();
